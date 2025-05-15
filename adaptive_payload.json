@@ -1,0 +1,55 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "✅ API 자동 분석 결과 (총 1건)",
+            "weight": "Bolder",
+            "size": "Medium"
+          },
+          {
+            "type": "TextBlock",
+            "text": "분석된 파일 및 상태",
+            "wrap": true
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "1. CSV_DDE_CASE_Case_01.csv",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "BENIGN",
+                    "weight": "bolder",
+                    "color": "good",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
